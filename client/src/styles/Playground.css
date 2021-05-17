@@ -1,0 +1,130 @@
+@keyframes sun_movement {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 1rem;
+
+    /* top: calc(50%); */
+    /*     -webkit-transform: rotateX(180deg); */
+  }
+
+  100% {
+    top: 0;
+
+    /*     -webkit-transform: rotateX(0deg); */
+  }
+}
+@keyframes cloud_movement {
+  0% {
+    right: 2rem;
+  }
+
+  50% {
+    right: 5rem;
+
+    /* right: calc(50%); */
+    /*     -webkit-transform: rotateX(180deg); */
+  }
+
+  100% {
+    right: 2rem;
+
+    /*     -webkit-transform: rotateX(0deg); */
+  }
+}
+
+/* .landingpage-wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+} */
+
+.svg-background {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.sundelof {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+
+  color: #a4856d;
+}
+
+.sun-cloud {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: sun_movement;
+  -webkit-animation-duration: 8s;
+}
+.cloud {
+  position: absolute;
+  top: 2em;
+  right: 5em;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: cloud_movement;
+  -webkit-animation-duration: 18s;
+}
+
+.house {
+  position: absolute;
+  right: 15%;
+  bottom: 6rem;
+}
+
+.sign {
+  position: absolute;
+  right: 12%;
+  bottom: 4rem;
+}
+
+/* .dog-left {
+  position: absolute;
+  right: 35%;
+  bottom: 3rem;
+  transform: rotateY(3.142rad);
+} */
+.dog-right {
+  position: absolute;
+  right: 5%;
+  bottom: 2rem;
+}
+
+.large-tree {
+  position: absolute;
+  left: 40%;
+  bottom: 8em;
+}
+.medium-tree-left {
+  position: absolute;
+  left: 4%;
+  top: 8em;
+}
+.medium-tree-right {
+  position: absolute;
+  right: -8%;
+  bottom: 8em;
+}
+
+@media (max-width: 1400px) {
+  .large-tree {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .medium-tree-left {
+    display: none;
+  }
+}
