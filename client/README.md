@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![logo](./components/svgs/items/dove.svg)
 
-## Getting Started
+# _CODEBOOK_
 
-First, run the development server:
+Codebook is a hobby project that I created with two purposes. One being the quest of mastering the MERN stack and the other being that I wanted to make my own social media platform. The Codebook name can be somewhat misleading since some may believe it's a social platform for developers. My own vision for it is to be a social platform for adventurers and outdoor people. And my target audience is going to be my family and maybe some close friends.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Techniques
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I have built all the APIs and backend using Node.js and Express. As a database I'm using MongoDB since it’s the MERN stack I'm pursuing. For the client I have used NextJS and in the client I also set up with redux to easier keep track of states.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## DEPLOYMENT
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+This website will be deployed at the domain of my family name. If you feel encouraged to share your adventures don’t hesitate to join the community today! The link below will start your own adventure.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[SUNDELOF.SE](https://sundelof.se)
