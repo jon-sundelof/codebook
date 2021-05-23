@@ -2,7 +2,7 @@
 
 # _CODEBOOK_
 
-Codebook is a hobby project that I created with two purposes. One being the quest of mastering the MERN stack and the other being that I wanted to make my own social media platform. The Codebook name can be somewhat misleading since some may believe it's a social platform for developers. My own vision for it is to be a social platform for adventurers and outdoor people. And my target audience is going to be my family and maybe some close friends.
+Codebook is a hobby project that I created with two purposes. One being the quest of mastering the MERN stack and the other being that I wanted to make my own social media platform. The Codebook name can be somewhat misleading since some may believe it's a social platform for developers. My own vision for it is to be a social platform for adventurers and outdoor people. And my first target audience is going to be my family and maybe some close friends.
 
 ## Techniques
 
