@@ -1,10 +1,21 @@
-import { Fragment, useState } from 'react';
+//STYLES
 import styles from '../styles/pages/auth_styles/signup.module.scss';
-import axios from 'axios';
-import Link from 'next/link';
-// import e from 'express';
 
-const Signup = () => {
+// Dependencies
+import { Fragment, useState } from 'react';
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+
+//Components
+import Alert from '../components/shared/alert/Alert';
+import Dove from '../components/svgs/items/Dove';
+
+//REDUX IMPORTS
+import { connect, useSelector } from 'react-redux';
+import { setAlert } from '../actions/alert';
+
+const Signup = ({ setAlert }) => {
+  const alert = useSelector((state) => state.alert);
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -19,28 +30,12 @@ const Signup = () => {
 
     if (passwordOne !== passwordTwo) {
       console.log("Password doesn't match!");
+
+      const alertDoubble = alert.findIndex((x) => x.alertType === 'danger');
+      if (alertDoubble !== -1) return;
+      setAlert("Password doesn't match", 'danger');
     } else {
-      const newUser = {
-        name: username,
-        email: email,
-        password: passwordOne,
-      };
       console.log('Good Work!');
-      try {
-        const config = {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        };
-
-        const body = JSON.stringify(newUser);
-
-        const res = await axios.post('/api/users', body, config);
-        // console.log(res);
-        console.log(res.data);
-      } catch (err) {
-        // console.error(err.response.data);
-      }
     }
   };
   const onChange = (e) => {
@@ -69,9 +64,14 @@ const Signup = () => {
   return (
     <Fragment>
       <main className={styles.signup_wrapper}>
-        <h1>SUNDELOF</h1>
+        <div className={styles.logo_container}>
+          <Dove />
+          <h1>SUNDELOF</h1>
+        </div>
+
         <form onSubmit={(e) => onSubmit(e)}>
           <h3>Create your account</h3>
+          <Alert />
           <label>
             Username
             <input
@@ -127,4 +127,8 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+Signup.PropTypes = {
+  setAlert: PropTypes.func.isRequired,
+};
+
+export default connect(null, { setAlert })(Signup);

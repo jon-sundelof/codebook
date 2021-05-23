@@ -1,0 +1,16 @@
+@use '../variables' as v;
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  border-left: 4px solid v.$dark-cyan;
+  opacity: 0.9;
+  background: v.$light-cyan;
+  color: #383838;
+}
+
+.alert-danger {
+  background: v.$danger-color;
+  border-left: 4px solid v.$danger-color-dark;
+}

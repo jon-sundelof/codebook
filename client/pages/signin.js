@@ -2,6 +2,8 @@ import { Fragment, useState } from 'react';
 import styles from '../styles/pages/auth_styles/signup.module.scss';
 import Link from 'next/link';
 
+import Dove from '../components/svgs/items/Dove';
+
 const Signin = () => {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
@@ -32,7 +34,10 @@ const Signin = () => {
   return (
     <Fragment>
       <main className={styles.signup_wrapper}>
-        <h1>SUNDELOF</h1>
+        <div className={styles.logo_container}>
+          <Dove />
+          <h1>SUNDELOF</h1>
+        </div>
         <form /* onSubmit={onSubmit} */>
           <h3>Sign In</h3>
           <label>

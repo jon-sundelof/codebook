@@ -20,7 +20,16 @@
     font-weight: 500;
     letter-spacing: 1.5px;
     font-size: 3rem;
+    padding-left: 15px;
     margin-bottom: 35px;
+  }
+
+  .logo_container {
+    display: flex;
+    // align-items: center;
+    // align-items: center;
+    // justify-content: space-between;
+    margin-left: -62px;
   }
 
   span {
