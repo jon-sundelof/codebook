@@ -6,7 +6,7 @@ Codebook is a hobby project that I created with two purposes. One being the ques
 
 ## Techniques
 
-I have built all the APIs and backend using Node.js and Express. As a database I'm using MongoDB since it’s the MERN stack I'm pursuing. For the client I have used NextJS and in the client I also set up with redux to easier keep track of states.
+I have built all the APIs and backend using Node.js and Express. As a database I'm using MongoDB since it’s the MERN stack I'm pursuing. For the client I have used NextJS and the client is also set up with redux to easier keep track of states.
 
 ## DEPLOYMENT
 
