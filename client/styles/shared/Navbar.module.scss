@@ -1,0 +1,42 @@
+@use '../variables' as v;
+
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  border-bottom: 0.5px solid #e5e5e5;
+  // color: #fff;
+  background-color: #fff;
+  z-index: 9;
+}
+
+.navbar_wrapper > h1 {
+  font-family: 'KoHo', sans-serif;
+  letter-spacing: 1.5px;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.navbar_wrapper > h1 > a {
+  text-decoration: none;
+  color: v.$almost-black;
+}
+
+.navbar_wrapper > ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 20rem;
+  list-style: none;
+}
+
+.nav_item > a {
+  color: v.$almost-black;
+  text-decoration: none;
+}
+.nav_item {
+  /*   color: var(--almost-black); */
+  text-decoration: none;
+}
